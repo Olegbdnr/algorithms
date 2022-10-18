@@ -10,6 +10,7 @@ public class Main {
         tree.root = tree.insert(tree.root, 50);
         tree.root = tree.insert(tree.root, 25);
         tree.preorderPrint(tree.root);
+        System.out.println("\n");
         tree.root = tree.remove(tree.root, 30);
         tree.root = tree.remove(tree.root, 40);
         tree.preorderPrint(tree.root);

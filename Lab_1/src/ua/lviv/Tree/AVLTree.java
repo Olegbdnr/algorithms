@@ -29,6 +29,13 @@ class AVLTree {
         return leftChild;
     }
 
+    /*        x              y
+    *        / \            / \
+    *       y   T3  --->   T1  x
+    *      / \      <---      /  \
+    *     T1  T2             T2   T3
+    * */
+
     Node rotateLeft(Node parent) {
         Node rightChild = parent.right;
         parent.right = rightChild.left;
